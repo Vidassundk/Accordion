@@ -1,0 +1,95 @@
+.accordion-component {
+  border-bottom: 1px solid #F3EFF5;
+  overflow: hidden;
+}
+.accordion-component p {
+  padding: 0 1rem;
+  transition: padding 0.2s, opacity 0.2s, transform 0.4s ease;
+  margin: 0;
+  font-weight: 300;
+}
+.accordion-component .text-container {
+  transition: height 0.2s ease-out;
+  overflow: scroll;
+}
+.accordion-component button {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  transition: background 0.2s;
+}
+.accordion-component button h2 {
+  color: #292929;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: start;
+}
+.accordion-component button h2, .accordion-component button svg {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.accordion-component button .arrow {
+  fill: #292929;
+}
+.accordion-component button:hover h2, .accordion-component button:hover svg {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f4f9;
+  background-image: linear-gradient(43deg, #f3f4f9 0%, #ffffff 46%, #f3f2ef 100%);
+}
+
+.presentation {
+  min-height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapse-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+header nav h3 {
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+header nav a {
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #292929;
+  font-weight: 300;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-align: right;
+}
+header nav a:hover {
+  opacity: 1;
+  letter-spacing: 1.5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

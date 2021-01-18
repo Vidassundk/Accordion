@@ -1,0 +1,40 @@
+.accordion-component
+    border-bottom: 1px solid $light-color
+    overflow: hidden
+    p
+        padding: 0 1rem 
+        transition: padding 0.2s, opacity 0.2s, transform 0.4s ease
+        margin: 0
+        font-weight: 300
+    .text-container
+        transition: height 0.2s ease-out
+        overflow: scroll
+    button
+        width: 100%
+        background: transparent
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 1rem 
+        border: none
+        outline: none
+        cursor: pointer
+        margin: 0.5rem 0
+        transition: background 0.2s
+        h2
+            color: $base-color
+            font-family: $main-font
+            text-transform: uppercase
+            font-weight: 300
+            text-align: start
+        h2,svg
+            opacity: 0.8
+            transition: opacity 0.2s
+        .arrow
+            fill: $base-color
+        &:hover
+            h2,svg
+                opacity: 1
+   
+       
+     

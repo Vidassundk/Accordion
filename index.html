@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      as="style"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="font"
+    />
+    <title>Magasin Accordion</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>accordion</h3>
+        <a href="https://github.com/Vidassundk/accordion" target="_blank"
+          >view code on github</a
+        >
+      </nav>
+    </header>
+    <section class="presentation">
+      <section class="collapse-container">
+        <accordion-component
+          open
+          reload
+          title="magasin task"
+          paragraph="Framework independant Web Component that does not require any javascript dependancies and can be utilized by being imported and attached into any html template."
+          second-paragraph="Content can be added to a component by passing down attributes 'title' and 'paragraph'."
+          third-paragraph="Additional paragraphs can be optionally added by passing down attributes 'second-paragraph' and 'third-paragraph'."
+        ></accordion-component>
+        <accordion-component
+          open
+          reload
+          title="default state - open or closed"
+          paragraph="Adding an 'open' attribute to a component will render it as open by default, otherwise the component will render closed by default."
+        ></accordion-component>
+        <accordion-component
+          reload
+          title="usage of SASS"
+          paragraph="To use SASS - insdead of regular css - the component has its own sass file within a component folder named collapse.sass, that needs to be imported and compiled with the main sass file used within the project."
+          second-paragraph="All of the CSS code for this component will be encapsulated under .accordion-component class, meaning it will not collide with the rest of the website."
+          third-paragraph="accordion.sass file takes in sass variables such as $main-font, $base-color and $light-color to adapt its style to a project its being used for."
+        ></accordion-component>
+        <accordion-component
+          reload
+          title="responsiveness"
+          paragraph="Component is suitable all for mobile and desktop window sizes, it is as wide as a parent container and as high as it is required for content inside of it."
+          second-paragraph="Accordion is programmed to refresh itself by closing and re-opening in case of screen width resizing, to re-calculate and re-apply components height that might have to change due to text wrapping inside of it. "
+          third-paragraph="This behaviour is optional, and only works by passing down 'reload' attribute on to the component."
+        ></accordion-component>
+      </section>
+    </section>
+    <script src="./components/accordion/accordionComponent.js"></script>
+  </body>
+</html>
